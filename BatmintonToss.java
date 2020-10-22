@@ -123,7 +123,7 @@ public class BatmintonToss {
                     {
                         break;
                     }
-                    break;
+
                 }
 
                 System.out.println("The player1 Number is : "+Player1);
