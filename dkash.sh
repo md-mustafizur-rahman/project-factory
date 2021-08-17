@@ -21,11 +21,11 @@ fi
 function pinCheck()
 {
  
- read -p "Enter Pin: " passwordmy_dkash
+ read -sp "Enter Pin: " passwordmy_dkash
 while [ $passwordmy_dkash -ne $password2 ]
 do
 echo " This pin number is wrong "
-read -p "Enter the agnin pin : " passwordmy_dkash
+read -sp "Enter the agnin pin : " passwordmy_dkash
 done
 
 }
@@ -186,13 +186,13 @@ then
 
 echo "+880 "$phone_number
 echo "Reset PIN"
-read -p "Enter the old pin : " oldPassword
+read -sp "Enter the old pin : " oldPassword
 
 
 while [ $oldPassword -ne $password2 ]
 do
 echo " old pin not match try again "
-read -p "Enter the old pin : " oldPassword
+read -sp "Enter the old pin : " oldPassword
 done
 
 while [ $oldPassword -eq $password2 ] || [ $password1 -lt 1000 ] || [ $password1 -gt 10000 ] || [ $password1 -ne $password2 ]
